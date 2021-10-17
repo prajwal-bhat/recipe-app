@@ -1,4 +1,4 @@
-package com.bhat.omnicell.challenge.recipe.exception.handler;
+package com.bhat.omnicell.challenge.recipe.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
