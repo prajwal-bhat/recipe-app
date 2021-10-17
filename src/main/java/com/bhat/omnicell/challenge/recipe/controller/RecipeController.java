@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.net.URI;
+
 
 @RestController
 @RequestMapping("/")
@@ -28,7 +30,8 @@ public class RecipeController {
 
     @PostMapping
     public ResponseEntity addRecipe(@RequestBody RecipeDto dto){
-        return ResponseEntity.ok()
+        URI uri =  URI.create(String.format("/%s", dto.getId()));
+        return ResponseEntity.created(uri)
                 .body(recipeService.addRecipe(dto));
     }
 

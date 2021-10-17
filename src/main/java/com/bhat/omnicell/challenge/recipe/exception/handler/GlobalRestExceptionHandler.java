@@ -3,7 +3,6 @@ package com.bhat.omnicell.challenge.recipe.exception.handler;
 import com.bhat.omnicell.challenge.recipe.exception.ResourceNotFoundException;
 import com.bhat.omnicell.challenge.recipe.model.ApiError;
 import lombok.extern.slf4j.Slf4j;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
